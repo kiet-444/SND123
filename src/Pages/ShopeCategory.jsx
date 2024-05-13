@@ -29,6 +29,9 @@ const ShopeCategory = (props) => { //add props nhu mot doi so
           }
         })}
       </div>
+      <div className="shopcategory-loadmore">
+        More Product
+      </div>
     </div>
   )
 }

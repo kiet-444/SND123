@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 import './Navbar.css'
 import logo from '../Assets/logo.png'
 import cart_icon from '../Assets/cart_icon.png'
@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
-    const [menu,setmenu] = useState("shop");
+    // const [menu,setmenu] = useState("shop");
 
   return (
     <div className='navbar'>
@@ -16,10 +16,10 @@ const Navbar = () => {
             <p>SHOPPER</p>
         </div>
         <div className="nav-menu">
-           <Link style={{ textDecoration: 'none' }} to='/'>Shop</Link>
-           <Link style={{ textDecoration: 'none' }} to='/mens'>Men</Link>
-           <Link style={{ textDecoration: 'none' }} to='/womens'>Women</Link>
-           <Link style={{ textDecoration: 'none' }} to='/kids'>Kids</Link>
+           <Link style={{ textDecoration: 'none', color: 'black' }} to='/'>Shop</Link>
+           <Link style={{ textDecoration: 'none', color: 'black' }} to='/mens'>Men</Link>
+           <Link style={{ textDecoration: 'none', color: 'black' }} to='/womens'>Women</Link>
+           <Link style={{ textDecoration: 'none', color: 'black' }} to='/kids'>Kids</Link>
         </div>
         <div className="nav-login-cart">
         <Link to='/login'><button>Login</button></Link>
