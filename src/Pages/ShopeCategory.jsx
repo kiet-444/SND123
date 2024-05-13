@@ -5,7 +5,7 @@ import Item from '../Components/Item/Item';
 import dropdown_icon from '../Components/Assets/dropdown_icon.png'
 
 
-const ShopeCategory = () => {
+const ShopeCategory = (props) => { //add props nhu mot doi so
   const {all_product} = useContext(ShopContext);
   return (
     <div className='shop-category'>
@@ -23,7 +23,6 @@ const ShopeCategory = () => {
           if(props.category===item.category){
             return <Item key={i} id={item.id} name={item.name} image={item.image} 
             new_price={item.new_price} old_price={item.old_price} />
-
           }
           else{
             return null;
