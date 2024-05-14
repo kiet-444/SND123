@@ -20,6 +20,7 @@ const Navbar = () => {
            <Link style={{ textDecoration: 'none', color: 'black' }} to='/mens'>Men</Link>
            <Link style={{ textDecoration: 'none', color: 'black' }} to='/womens'>Women</Link>
            <Link style={{ textDecoration: 'none', color: 'black' }} to='/kids'>Kids</Link>
+           <Link style={{ textDecoration: 'none', color: 'black' }} to='/kids'>Contact</Link>
         </div>
         <div className="nav-login-cart">
         <Link to='/login'><button>Login</button></Link>

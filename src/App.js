@@ -24,6 +24,7 @@ function App() {
         <Route path='/mens' element={<ShopeCategory banner={men_banner} category="men"/>}/>
         <Route path='/womens' element={<ShopeCategory banner={women_banner} category="women"/>}/>
         <Route path='/kids' element={<ShopeCategory banner={kid_banner} category="kid"/>}/>
+        
         <Route path="/product" element={<Product/>}>
         <Route path=':productId' element={<Product/>}/>
         </Route>
