@@ -45,13 +45,13 @@
     font-weight: 500;
     cursor: pointer;
 }
-.oginsignup-login{
+.loginsignup-login{
     margin-top: 20px;
     color: #5c5c5c;
     font-size: 18px;
     font-weight: 500;
 }
-.oginsignup-login span{
+.loginsignup-login span{
     color: #ff4141;
     font-weight: 600;
 }
