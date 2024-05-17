@@ -17,7 +17,8 @@ import kid_banner from './Components/Assets/banner_kids.png'
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <BrowserRouter> 
+      {/* protect for route , axios call api, tailwind or ant design */}
       <Navbar/>
       <Routes>
         <Route path='/' element={<Shop/>}/>
