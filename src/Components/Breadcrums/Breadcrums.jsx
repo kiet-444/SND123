@@ -1,34 +1,34 @@
 import React from 'react'
 import './Breadcrum.css'
-import Product from '../../Pages/Product'
+// import Product from '../../Pages/Product'
 import arrow_icon from '../Assets/breadcrum_arrow.png'
 
-const Breadcrum = (props) =>{
-    const {product} = (props);
-
-    return (
-        <div className='breadcrum'>
-           Home <img src={arrow_icon} alt="" /> Shop <img src={arrow_icon} alt="" /> {product.category} <img src={arrow_icon} alt="" /> {product.name}
-    
-        </div>
-      )
-}
-
-
-
-export default Breadcrum
-
-// const Breadcrum = ({ product }) => {
-//     // Check if the product object is defined
-//     if (!product) {
-//         return null; // Return null or handle the missing product case
-//     }
+// const Breadcrum = (props) =>{
+//     const {product} = (props);
 
 //     return (
 //         <div className='breadcrum'>
-//             Home <img src={arrow_icon} alt="" /> Shop <img src={arrow_icon} alt="" /> {product.category} <img src={arrow_icon} alt="" /> {product.name}
+//            Home <img src={arrow_icon} alt="" /> Shop <img src={arrow_icon} alt="" /> {product.category} <img src={arrow_icon} alt="" /> {product.name}
+    
 //         </div>
-//     );
-// };
+//       )
+// }
 
-// export default Breadcrum;
+
+
+// export default Breadcrum
+
+const Breadcrum = ({ product }) => {
+    // Check if the product object is defined
+    if (!product) {
+        return null; // Return null or handle the missing product case
+    }
+
+    return (
+        <div className='breadcrum'>
+            Home <img src={arrow_icon} alt="" /> Shop <img src={arrow_icon} alt="" /> {product.category} <img src={arrow_icon} alt="" /> {product.name}
+        </div>
+    );
+};
+
+export default Breadcrum;
