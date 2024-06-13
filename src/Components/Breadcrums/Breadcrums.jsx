@@ -19,7 +19,7 @@ import arrow_icon from '../Assets/breadcrum_arrow.png'
 // export default Breadcrum
 
 const Breadcrum = ({ product }) => {
-    
+    // Check if the product object is defined
     if (!product) {
         return null; // Return null or handle the missing product case
     }

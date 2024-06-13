@@ -7,7 +7,7 @@ const ProductDisplay = (props) => {
     const { product } = props;
 
     // Debugging tip: log product to check its structure
-    // console.log(product);
+    console.log(product);
 
     return (
         <div className='productdisplay'>
